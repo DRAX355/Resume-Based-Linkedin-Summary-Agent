@@ -26,8 +26,9 @@ if uploaded_file:
         with st.spinner("Generating post..."):
             resume_text = extract_resume_text(tmp_path)
             st.text_area("🔍 Extracted Resume Text", resume_text, height=300)
+
             task = create_linkedin_task(linkedin_post_agent, resume_text)
-            crew = Crew(agents=[linkedin_post_agent], tasks=[task])
+            crew = Crew(agents=[linkedin_post_agent], tasks=[task], return_output=True)
             result = crew.kickoff()
             if isinstance(result, str) and result.lower().startswith("thought:"):
                 result = ""  # Clean up garbage thoughts if no output

@@ -9,6 +9,6 @@ linkedin_post_agent = Agent(
     role="LinkedIn Content Creator",
     goal="Write an engaging LinkedIn post based on a resume",
     backstory="An experienced social media copywriter who helps professionals highlight their achievements on LinkedIn.",
-    verbose=False,
+    verbose=True,
     llm=llm
 )

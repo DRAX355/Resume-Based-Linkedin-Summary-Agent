@@ -10,7 +10,7 @@ Resume content:
 ---
 
 Do not explain your reasoning. Just output the final LinkedIn post.""",
-        expected_output="A LinkedIn-ready post only, no explanation or reasoning.",
+        expected_output="A LinkedIn-ready about me post only, no explanation or reasoning.",
         agent=agent
     )
 
