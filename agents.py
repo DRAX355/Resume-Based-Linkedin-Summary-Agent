@@ -3,7 +3,7 @@ from langchain.llms import OpenAI
 from langchain_groq import ChatGroq as Groq
 import os
 
-llm = Groq(temperature=0.5, groq_api_key=os.getenv("GROQ_API_KEY"),model_name="groq/llama3-8b-8192")
+llm = Groq(temperature=0.5, groq_api_key=os.getenv("GROQ_API_KEY"),model_name="groq/qwen/qwen3-32b")
 
 linkedin_post_agent = Agent(
     role="LinkedIn Content Creator",
