@@ -1,1 +1,53 @@
+# ❌ Ignore virtual environments
+venv/
 .env
+.Python
+
+# ❌ Ignore Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# ❌ Ignore Jupyter/IPython history
+.ipynb_checkpoints/
+
+# ❌ Ignore local environment/IDE configs
+*.env
+*.venv
+*.log
+*.pot
+*.pyc
+*.pyd
+*.sqlite3
+*.db
+
+# ❌ VSCode, PyCharm, and other editor files
+.vscode/
+.idea/
+*.swp
+
+# ❌ Ignore test artifacts
+.coverage
+htmlcov/
+.tox/
+.nox/
+.cache/
+dist/
+build/
+
+# ❌ Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# ❌ Ignore Docker artifacts (optional)
+*.tar
+*.img
+
+# ✅ Optional: ignore app upload files
+*.docx
+*.pdf
+*.tmp
+
+# ❌ Streamlit specific cache
+.streamlit/config.toml
+.streamlit/secrets.toml
