@@ -1,6 +1,7 @@
-crewai==0.28.8
+crewai
 langchain
 langchain-groq
+langchain_community
 openai
 streamlit
 python-docx

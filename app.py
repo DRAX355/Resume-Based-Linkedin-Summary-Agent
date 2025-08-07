@@ -8,7 +8,8 @@ import tempfile
 import os
 import time
 
-load_dotenv()
+if os.path.exists('.env'):
+    load_dotenv()
 
 st.set_page_config(page_title="LinkedIn Post Generator", layout="centered")
 st.title("📄Linkedin About Me Agent")
