@@ -6,3 +6,5 @@ streamlit
 python-docx
 python-dotenv
 PyMuPDF
+chromadb==0.4.24
+
