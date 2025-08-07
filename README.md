@@ -42,23 +42,23 @@ Upload a `.pdf` or `.docx` resume, and the app:
 git clone https://github.com/DRAX355/Resume-Based-Linkedin-Summary-Agent.git
 cd Resume-Based-Linkedin-Summary-Agent
 ```
-###2. Create a virtual environment
+### 2. Create a virtual environment
 ```
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 ```
-###3. Install dependencies
+### 3. Install dependencies
 ```
 pip install -r requirements.txt
 ```
-###4. Add your API key
+### 4. Add your API key
 Create a .env file with your Groq API key:
 ```
 GROQ_API_KEY=your_groq_api_key_here
 ```
 🛑 Do not commit your .env file to GitHub.
 
-###🐳 Docker Deployment
+### 🐳 Docker Deployment
 Build the Docker image
 ```
 docker build -t linkedin-agent-app .
@@ -69,7 +69,7 @@ docker run --env-file .env -p 8501:8501 linkedin-agent-app
 ```
 Then open: http://localhost:8501
 
-###🧠 About the Agent
+### 🧠 About the Agent
 The app uses a CrewAI agent called LinkedIn Content Creator, with the following behavior:
 
 Reads and analyzes resume content
@@ -78,7 +78,7 @@ Summarizes it in a compelling, professional tone
 
 Outputs a post without thoughts, reasoning, or explanation
 
-###📁 Project Structure
+### 📁 Project Structure
 ```
 ├── app.py                # Main Streamlit app
 ├── agents.py             # Defines AI agent and model
@@ -96,5 +96,3 @@ Future projects will include multi-agent collaboration, memory, and more complex
 
 🙋‍♂️ Author
 Darshan CM
-🧑‍💻 GitHub: @DRAX355
-🌐 Live App: Try Now
